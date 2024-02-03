@@ -1,5 +1,12 @@
 import { Tabs } from "expo-router";
+import { TamaguiProvider } from "tamagui";
+
+import { config } from "../tamagui.config";
 
 export default function Layout() {
-  return <Tabs />;
+  return (
+    <TamaguiProvider config={config}>
+      <Tabs />
+    </TamaguiProvider>
+  );
 }
