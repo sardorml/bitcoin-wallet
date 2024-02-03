@@ -6,13 +6,24 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "ts:check": "tsc"
   },
   "dependencies": {
+    "bip32": "^4.0.0",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^6.1.5",
+    "buffer": "^6.0.3",
+    "ecpair": "^2.1.0",
+    "events": "^3.3.0",
     "expo": "~50.0.5",
     "expo-status-bar": "~1.11.1",
+    "fs": "^0.0.1-security",
     "react": "18.2.0",
-    "react-native": "0.73.2"
+    "react-native": "0.73.2",
+    "react-native-get-random-values": "^1.10.0",
+    "stream": "^0.0.2",
+    "tiny-secp256k1": "1.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
