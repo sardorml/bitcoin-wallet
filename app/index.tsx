@@ -1,13 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { mnemonic, generateWallet } from "../helpers/bitcoin";
-import { Button } from "tamagui";
-import { Airplay } from "@tamagui/lucide-icons";
+import { Button, Text, View } from "tamagui";
+import { Wallet } from "@tamagui/lucide-icons";
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
-
-console.log(mnemonic);
-console.log(generateWallet(mnemonic));
+import { router } from "expo-router";
 
 export default function App() {
   const [loaded] = useFonts({
@@ -26,22 +22,22 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text>Bitcoin wallet</Text>
-      <Button alignSelf="center" icon={Airplay} size="$6">
-        Large
+    <View flex={1} alignItems="center" bg="white" justifyContent="center">
+      <Text y="$-5" fontSize={20}>
+        Create your first ever Bitcoin wallet
+      </Text>
+      <Button
+        alignSelf="center"
+        icon={Wallet}
+        size="$6"
+        bg="#6366f1"
+        color="white"
+        onPress={() => router.push("/create")}
+      >
+        Create wallet
       </Button>
 
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

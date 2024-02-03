@@ -2575,7 +2575,7 @@
   resolved "https://registry.yarnpkg.com/@tamagui/constants/-/constants-1.88.21.tgz#22504b62c7ee504121d33958f553b0e672e296bf"
   integrity sha512-BG8SK95ipWNSj3LU1H8B2Veq94FdNZzbTxRN2qzSqxXK/rhpDtHND4CFZiRZnQEsQHf0efvtQxqhkROb7pQ71A==
 
-"@tamagui/core@1.88.21":
+"@tamagui/core@1.88.21", "@tamagui/core@^1.88.21":
   version "1.88.21"
   resolved "https://registry.yarnpkg.com/@tamagui/core/-/core-1.88.21.tgz#0348f8f0b37c643ca4df263d2f136f803f9439cc"
   integrity sha512-AVvtB1zKu2GkAS0to42SGv9d7VR54BUjlLxz9Bn1h988uCU8XSe3XGgeVSwInwwU3dTGaGbbCozitl6xTvxrLw==
