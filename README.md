@@ -1,3 +1,7 @@
+<div style="text-align: center;">
+<img src="/img/demo.gif" width="300px">
+</div>
+
 ## Expo bitcoin wallet app
 
 This is a simple bitcoin wallet example for demonstration purposes only.
