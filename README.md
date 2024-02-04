@@ -6,8 +6,6 @@ DO NOT USE THIS CODE FOR GENERATING MAINNET PRIVATE KEYS AND ADDRESSES!!!
 
 &nbsp;
 
-#### Demo
-
 <p align="center">
 <img src="/assets/demo.gif" width="300px">
 </p>
