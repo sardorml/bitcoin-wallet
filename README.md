@@ -11,7 +11,7 @@ This is a simple bitcoin wallet example for demonstration purposes only.
 </p>
 &nbsp;
 
-To run the project follow this steps.
+To run the project follow these steps.
 
 ```
 yarn install
