@@ -1,5 +1,7 @@
 import { View, Text, Button, styled } from "tamagui";
 import { Wallet2, Copy, Bitcoin, KeySquare } from "@tamagui/lucide-icons";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/store";
 
 const TextWrapped = styled(Text, {
   flex: 1,
@@ -47,6 +49,7 @@ function ListItem({
 }
 
 export default function Wallet() {
+  const wallet = useSelector((state: RootState) => state.wallet);
   return (
     <View bg="white" flex={1} alignItems="center" paddingHorizontal={10}>
       <Button
@@ -61,21 +64,13 @@ export default function Wallet() {
         My Bitcoin wallet
       </Text>
       <View gap={10}>
-        <ListItem
-          icon={Wallet2}
-          name="Address"
-          detail="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"
-        />
+        <ListItem icon={Wallet2} name="Address" detail={wallet.address} />
         <ListItem
           icon={KeySquare}
           name="PrivateKey"
-          detail="e752b29a53449c00df1ce1baf1d848bdfd1d06e7b289b1b3cda5d58ccd432491"
+          detail={wallet.privateKey}
         />
-        <ListItem
-          icon={KeySquare}
-          name="PuplicKey"
-          detail="03910bc0e2a02b501ed88b4ab4a36cd967af99abd927d4f0cc7e9353ccf92ff113"
-        />
+        <ListItem icon={KeySquare} name="PuplicKey" detail={wallet.publicKey} />
       </View>
     </View>
   );

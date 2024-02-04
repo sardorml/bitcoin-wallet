@@ -1,13 +1,21 @@
 import { View, Text, Button } from "tamagui";
-import { Wallet } from "@tamagui/lucide-icons";
 import MnemonicList from "../../components/MnemonicList";
 import { mnemonic, generateWallet } from "../../helpers/bitcoin";
 import { router } from "expo-router";
+import { useDispatch } from "react-redux";
+import { setWallet } from "../../store/wallet/walletSlice";
 
 export default function CreateWallet() {
+  const dispatch = useDispatch();
   function handleGeneratePrivateKey() {
     const wallet = generateWallet(mnemonic);
-    console.log(wallet);
+    dispatch(
+      setWallet({
+        address: wallet.address,
+        privateKey: wallet.privateKey,
+        publicKey: wallet.publicKey,
+      })
+    );
     router.push("/wallet");
   }
   return (
