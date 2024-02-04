@@ -2,7 +2,7 @@
 
 This is a simple bitcoin wallet example for demonstration purposes only.
 
-DO NOT USE THIS CODE FOR GENERATING MAINNET PRIVATE KEYS AND ADDRESSES!!!
+> DO NOT USE THIS CODE FOR GENERATING MAINNET PRIVATE KEYS AND ADDRESSES!!!
 
 &nbsp;
 
