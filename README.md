@@ -1,12 +1,12 @@
-<p align="center">
-<img src="/img/demo.gif" width="300px">
-</p>
-
 ## Expo bitcoin wallet app
 
 This is a simple bitcoin wallet example for demonstration purposes only.
 
 DO NOT USE THIS CODE FOR GENERATING MAINNET PRIVATE KEYS AND ADDRESSES!!!
+
+<p align="center">
+<img src="/img/demo.gif" width="300px">
+</p>
 
 To run the project follow this steps.
 
