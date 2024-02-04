@@ -4,9 +4,14 @@ This is a simple bitcoin wallet example for demonstration purposes only.
 
 DO NOT USE THIS CODE FOR GENERATING MAINNET PRIVATE KEYS AND ADDRESSES!!!
 
+&nbsp;
+
+#### Demo
+
 <p align="center">
-<img src="/img/demo.gif" width="300px">
+<img src="/assets/demo.gif" width="300px">
 </p>
+&nbsp;
 
 To run the project follow this steps.
 
