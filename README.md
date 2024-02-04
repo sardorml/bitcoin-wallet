@@ -1,6 +1,6 @@
-<div style="text-align: center;">
+<p align="center">
 <img src="/img/demo.gif" width="300px">
-</div>
+</p>
 
 ## Expo bitcoin wallet app
 
