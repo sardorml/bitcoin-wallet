@@ -17,9 +17,16 @@ export default function RootLayout() {
           name="create/index"
           options={{
             headerTitle: "Create wallet",
+            headerBackTitle: "Back",
           }}
         />
-        <Stack.Screen name="send/index" />
+        <Stack.Screen
+          name="wallet/index"
+          options={{
+            headerTitle: "Wallet",
+            headerBackVisible: false,
+          }}
+        />
       </Stack>
     </TamaguiProvider>
   );

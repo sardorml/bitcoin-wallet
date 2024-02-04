@@ -1,5 +1,4 @@
-import { View, styled } from "@tamagui/core";
-import { Text } from "tamagui";
+import { Text, View, styled } from "tamagui";
 
 const StyledView = styled(View, {
   height: 80,

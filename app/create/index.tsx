@@ -1,11 +1,15 @@
 import { View, Text, Button } from "tamagui";
 import { Wallet } from "@tamagui/lucide-icons";
 import MnemonicList from "../../components/MnemonicList";
-import { mnemonic } from "../../helpers/bitcoin";
-
-console.log(mnemonic);
+import { mnemonic, generateWallet } from "../../helpers/bitcoin";
+import { router } from "expo-router";
 
 export default function CreateWallet() {
+  function handleGeneratePrivateKey() {
+    const wallet = generateWallet(mnemonic);
+    console.log(wallet);
+    router.push("/wallet");
+  }
   return (
     <View flex={1} alignItems="center" bg="white">
       <Text paddingTop="$5" fontSize={18}>
@@ -21,9 +25,9 @@ export default function CreateWallet() {
           color="white"
           width="100%"
           size="$6"
-          onPress={() => console.log("Create wallet")}
+          onPress={() => handleGeneratePrivateKey()}
         >
-          Generate wallet
+          Generate Private Key
         </Button>
       </View>
     </View>
